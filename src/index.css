@@ -37,7 +37,7 @@ body {
   }
 
   .bg-techy-light {
-    color: black;
+    color: rgba(30, 41, 59, 1);
     background: radial-gradient(
       circle,
       rgba(255, 255, 255, 1) 0%,
@@ -56,12 +56,12 @@ body {
     height: 100%;
     background: radial-gradient(
       circle,
-      rgba(0, 150, 255, 0.1) 1px,
+      rgba(9, 93, 153, 0.315) 1px,
       transparent 1px
     );
     background-size: 20px 20px;
     z-index: 1;
-    animation: ripple 6s infinite ease-in-out;
+    animation: flow 6s infinite ease-in-out;
   }
 
   @keyframes flow {
