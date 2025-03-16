@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  color: aliceblue;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@layer utilities {
+  .bg-techy {
+    background: radial-gradient(
+      circle,
+      rgba(30, 41, 59, 1) 0%,
+      rgba(15, 23, 42, 1) 100%
+    );
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-techy::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    );
+    background-size: 20px 20px;
+    z-index: 1;
+    animation: flow 6s infinite ease-in-out, flow 8s infinite ease-in-out;
+  }
+
+  .bg-techy-light {
+    color: black;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(240, 240, 240, 1) 100%
+    );
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bg-techy-light::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(0, 150, 255, 0.1) 1px,
+      transparent 1px
+    );
+    background-size: 20px 20px;
+    z-index: 1;
+    animation: ripple 6s infinite ease-in-out;
+  }
+
+  @keyframes flow {
+    0% {
+      transform: translateY(0) translateX(0);
+      opacity: 0.8;
+    }
+    25% {
+      transform: translateY(-10px) translateX(10px);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translateY(0) translateX(20px);
+      opacity: 0.8;
+    }
+    75% {
+      transform: translateY(10px) translateX(10px);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0.8;
+    }
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
