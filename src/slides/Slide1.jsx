@@ -8,15 +8,16 @@ export default function Slide1({ theme }) {
           theme === "dark" ? "text-black" : "text-white"
         }`}
       >
-        Paulino
+        Paulino Jr.
       </h1>
       <h2
         className={`text-2xl mt-4 ${
           theme === "dark" ? "text-black" : "text-white"
         }`}
       >
-        Software Engineer
+        Frontend Engineer
       </h2>
+      
     </div>
   );
 }

@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import Slide1 from "./slides/Slide1";
+import ArrowNavigation from "./components/ArrowNavigation";
 
 function AppContent() {
   const [theme, setTheme] = useState("dark");
@@ -26,6 +27,8 @@ function AppContent() {
   return (
     <div className="relative w-screen h-screen z-10 bg-black/50 text-4xl">
       <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
+
+      <ArrowNavigation theme={theme} />
 
       <div
         className={`flex h-screen w-screen items-center justify-center ${
