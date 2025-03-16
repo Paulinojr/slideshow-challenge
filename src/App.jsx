@@ -24,7 +24,7 @@ function AppContent() {
 
 
   return (
-    <>
+    <div className="relative w-screen h-screen z-10 bg-black/50 text-4xl">
       <ThemeSwitcher theme={theme} toggleTheme={toggleTheme} />
 
       <div
@@ -36,7 +36,7 @@ function AppContent() {
           <Route path="/slide1" element={<Slide1 theme={theme} />} />
         </Routes>
       </div>
-    </>
+    </div>
   );
 }
 
