@@ -60,7 +60,7 @@ export default function Slide2({ theme }) {
             theme === "dark" ? "text-black" : "text-white"
           }`}
         >
-          <li className="mb-4">Wanted to showcase my skills.</li>
+          <li className="mb-4">I wanted to showcase my skills.</li>
           <li className="mb-4">
             Created this web app to look like a slideshow.
           </li>
