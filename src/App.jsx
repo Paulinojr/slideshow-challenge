@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import Slide1 from "./slides/Slide1";
+import Slide2 from "./slides/Slide2";
 import ArrowNavigation from "./components/ArrowNavigation";
 
 function AppContent() {
@@ -37,6 +38,10 @@ function AppContent() {
       >
         <Routes>
           <Route path="/slide1" element={<Slide1 theme={theme} />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/slide2" element={<Slide2 theme={theme} />} />
         </Routes>
       </div>
     </div>
