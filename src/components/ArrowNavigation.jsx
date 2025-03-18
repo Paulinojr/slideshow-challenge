@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function ArrowNavigation({ theme }) {
   const navigate = useNavigate();
 
-  const slideRoutes = ["/slide1", "/slide2", "/slide3", "/slide4"];
+  const slideRoutes = ["/slide1", "/slide2", "/slide3", "/slide4", "/slide5"];
 
   const navigateToSlide = (direction) => {
     const currentPath = window.location.pathname;

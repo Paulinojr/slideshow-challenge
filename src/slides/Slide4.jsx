@@ -67,7 +67,7 @@ export default function Slide2({ theme }) {
             theme === "dark" ? "text-black" : "text-white"
           }`}
         >
-          Live Weather Updates
+          Server-sent events implementation
         </h2>
         <div className="mt-6">
           <SyntaxHighlighter language="javascript" style={dracula}>
