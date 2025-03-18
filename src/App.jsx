@@ -9,6 +9,7 @@ import ThemeSwitcher from "./components/ThemeSwitcher";
 import Slide1 from "./slides/Slide1";
 import Slide2 from "./slides/Slide2";
 import Slide3 from "./slides/Slide3";
+import Slide4 from "./slides/Slide4";
 import ArrowNavigation from "./components/ArrowNavigation";
 
 function AppContent() {
@@ -47,6 +48,10 @@ function AppContent() {
 
         <Routes>
           <Route path="/slide3" element={<Slide3 theme={theme} />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/slide4" element={<Slide4 theme={theme} />} />
         </Routes>
       </div>
     </div>
